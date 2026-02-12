@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Procedural Weapon Generator</title>
+
+  <style>
+    body {
+      font-family: monospace;
+      max-width: 900px;
+      margin: 40px auto;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    button { padding: 6px; }
+
+    .weapon {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Procedural Weapon Generator</h1>
+
+<div class="controls">
+  <label>
+    Risk
+    <select id="risk">
+      <option value="0">Safe</option>
+      <option value="1">Medium</option>
+      <option value="2">Reckless</option>
+    </select>
+  </label>
+
+  <label>
+    Style
+    <select id="style">
+      <option value="0">Balanced</option>
+      <option value="1">Reliable</option>
+      <option value="2">Reckless</option>
+    </select>
+  </label>
+
+  <label>
+    Complexity
+    <select id="complexity">
+      <option value="0">Simple</option>
+      <option value="1" selected>Medium</option>
+      <option value="2">Dense</option>
+    </select>
+  </label>
+
+  <label>
+    Batch
+    <input id="batch" type="number" value="5" min="1" max="50">
+  </label>
+</div>
+
+<button onclick="generateBatch()">Generate</button>
+
+<div id="output"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
