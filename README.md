@@ -31,22 +31,166 @@ Batch	Number - of weapons to generate at once, generates multiple unique weapons
  
 Example Outputs
 
-Simple Weapon:
+Risk-safe Style-balanced Complexity-medium
 
-=== Iron Pike ===
+Scrap Flask
 Template: Setup → Power
 Advantage: massive damage
 Cost: must brace before attacking
+Situational: strong in chokepoints
 Failure: short recovery on miss
 
-
-Dense Weapon (High Risk, Reckless Style):
-
-=== Blood Harpoon Gun ===
+Grim Dagger
 Template: Mobility → Fragility
-Advantage: dash through enemies when striking, very fast attack speed
-Cost: reduced defense while equipped, cannot block
+Advantage: very fast attack speed
+Cost: reduced defense while equipped
 Situational: bonus damage from behind
+Failure: take bonus damage when hit
+
+Flash Axe
+Template: Resource → Burst
+Advantage: fires a burst of shots
+Cost: generates heat each use
+Situational: strong at fight openings
+Failure: reload locks weapon briefly
+
+Blood Maul
+Template: Commitment → Reliability
+Advantage: cannot miss once locked
+Cost: cannot retarget mid-attack
+Situational: bonus damage at long range
+Failure: movement cancels shot
+
+Black Harpoon Gun
+Template: Commitment → Reliability
+Advantage: guaranteed critical hit while aiming
+Cost: must stand still to attack
+Situational: strong against priority targets
+Failure: movement cancels shot
+
+Risk-reckless Style-reliable Complexity-simple
+
+Flash Crossbow
+Template: Commitment → Reliability
+Advantage: cannot miss once locked
+Cost: cannot retarget mid-attack
+
+Failure: leaves wielder exposed
+Static Flask
+Template: Commitment → Reliability
+Advantage: cannot miss once locked
+Cost: cannot retarget mid-attack
+
+Failure: leaves wielder exposed
+Black Crossbow
+Template: Setup → Power
+Advantage: massive damage
+Cost: must brace before attacking
+
+Failure: long exposed window after swing
+Grim Harpoon Gun
+Template: Setup → Power
+Advantage: extended reach
+Cost: movement speed reduced while readied
+
+Failure: long exposed window after swing
+Blood Crossbow
+Template: Commitment → Reliability
+Advantage: guaranteed critical hit while aiming
+Cost: cannot retarget mid-attack
+
+Risk-medium Style-reckless Complexity-dense
+
+Flash Maul
+Template: Mobility → Fragility
+Advantage: dash through enemies when striking
+Advantage: very fast attack speed
+Cost: reduced defense while equipped
+Cost: cannot block
+Situational: strong for hit-and-run
+Failure: collision cancels attack and stuns
+
+Black Axe
+Template: Mobility → Fragility
+Advantage: very fast attack speed
+Advantage: dash through enemies when striking
+Cost: cannot block
+Cost: reduced defense while equipped
+Situational: strong for hit-and-run
+Failure: collision cancels attack and stuns
+
+Flash Axe
+Template: Mobility → Fragility
+Advantage: very fast attack speed
+Advantage: dash through enemies when striking
+Cost: reduced defense while equipped
+Cost: cannot block
+Situational: bonus damage from behind
+Failure: collision cancels attack and stuns
+
+Siege Rifle
+Template: Resource → Burst
+Advantage: large area explosion
+Advantage: fires a burst of shots
+Cost: generates heat each use
+Cost: limited ammo
+Situational: strong at fight openings
+Failure: overheat disables weapon
+
+Scrap Dagger
+Template: Commitment → Reliability
+Advantage: guaranteed critical hit while aiming
+Advantage: cannot miss once locked
+Cost: must stand still to attack
+Cost: cannot retarget mid-attack
+Situational: strong against priority targets
+Failure: long cooldown after firing
+
+Risk-reckless Style-reckless Complexity-dense
+
+Iron Crossbow
+Template: Mobility → Fragility
+Advantage: dash through enemies when striking
+Advantage: very fast attack speed
+Cost: cannot block
+Cost: reduced defense while equipped
+Situational: strong for hit-and-run
+Failure: recoil pushes you off position
+
+Static Rifle
+Template: Setup → Power
+Advantage: extended reach
+Advantage: pierces multiple enemies
+Cost: movement speed reduced while readied
+Cost: must brace before attacking
+Situational: extra damage vs armored targets
+Failure: long exposed window after swing
+
+Static Axe
+Template: Mobility → Fragility
+Advantage: dash through enemies when striking
+Advantage: very fast attack speed
+Cost: cannot block
+Cost: reduced defense while equipped
+Situational: bonus damage from behind
+Failure: recoil pushes you off position
+
+Grim Dagger
+Template: Resource → Burst
+Advantage: large area explosion
+Advantage: fires a burst of shots
+Cost: generates heat each use
+Cost: limited ammo
+Situational: strong at fight openings
+Failure: misfire damages wielder
+
+Black Harpoon Gun
+Template: Mobility → Fragility
+Advantage: very fast attack speed
+Advantage: dash through enemies when striking
+Cost: cannot block
+Cost: reduced defense while equipped
+Situational: strong for hit-and-run
 Failure: recoil pushes you off position
 
 Known Limitations
