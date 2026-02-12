@@ -18,12 +18,17 @@ Use the dropdowns and input box to select your parameters: risk, style, complexi
 Click Generate to see the results.
 
 Parameters (User Controls)
-Parameter	Description	Effect on Generated Weapons
-Risk	How dangerous the weapon’s failure can be	Low risk → minor mistakes; High risk → serious failure when attacks miss or backfire
-Style	What type of weapon “archetype” to favor	Balanced → mix of types; Reliable → safe, predictable effects; Reckless → fast, risky, high-damage tools
-Complexity	How many traits each weapon has	Simple → 1 advantage + 1 cost; Medium → includes situational effects; Dense → multiple advantages and costs, more chaotic
-Batch	Number of weapons to generate at once	Generates multiple unique weapons in one click
 
+Parameter	Description	Effect on Generated Weapons
+
+Risk - How dangerous the weapon’s failure can be, low risk → minor mistakes; High risk → serious failure when attacks miss or backfire
+
+Style -	What type of weapon “archetype” to favor, balanced → mix of types; Reliable → safe, predictable effects; Reckless → fast, risky, high-damage tools
+
+Complexity - How many traits each weapon has, simple → 1 advantage + 1 cost; Medium → includes situational effects; Dense → multiple advantages and costs, more chaotic
+
+Batch	Number - of weapons to generate at once, generates multiple unique weapons in one click
+ 
 Example Outputs
 
 Simple Weapon:
