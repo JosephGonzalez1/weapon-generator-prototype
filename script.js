@@ -10,59 +10,96 @@ const PREFIXES = [
 
 const TEMPLATES = [
 
-{
-  name: "Setup → Power",
-  tag: "heavy",
-  advantage: ["massive damage","extended reach","pierces multiple enemies"],
-  cost: ["must brace before attacking","movement speed reduced while readied"],
-  failure: [
-    "short recovery on miss",
-    "staggered if interrupted",
-    "long exposed window after swing"
-  ],
-  situational: ["strong in chokepoints","extra damage vs armored targets"]
-},
+  {
+    name: "Setup → Power",
+    tag: "heavy",
+    advantage: ["massive damage","extended reach","pierces multiple enemies"],
+    cost: ["must brace before attacking","movement speed reduced while readied"],
+    failure: [
+      "short recovery on miss",
+      "staggered if interrupted",
+      "long exposed window after swing"
+    ],
+    situational: ["strong in chokepoints","extra damage vs armored targets"]
+  },
 
-{
-  name: "Mobility → Fragility",
-  tag: "reckless",
-  advantage: ["dash through enemies when striking","very fast attack speed"],
-  cost: ["reduced defense while equipped","cannot block"],
-  failure: [
-    "take bonus damage when hit",
-    "collision cancels attack and stuns",
-    "recoil pushes you off position"
-  ],
-  situational: ["bonus damage from behind","strong for hit-and-run"]
-},
+  {
+    name: "Mobility → Fragility",
+    tag: "reckless",
+    advantage: ["dash through enemies when striking","very fast attack speed"],
+    cost: ["reduced defense while equipped","cannot block"],
+    failure: [
+      "take bonus damage when hit",
+      "collision cancels attack and stuns",
+      "recoil pushes you off position"
+    ],
+    situational: ["bonus damage from behind","strong for hit-and-run"]
+  },
 
-{
-  name: "Resource → Burst",
-  tag: "reckless",
-  advantage: ["fires a burst of shots","large area explosion"],
-  cost: ["limited ammo","generates heat each use"],
-  failure: [
-    "reload locks weapon briefly",
-    "overheat disables weapon",
-    "misfire damages wielder"
-  ],
-  situational: ["extra damage to grouped enemies","strong at fight openings"]
-},
+  {
+    name: "Resource → Burst",
+    tag: "reckless",
+    advantage: ["fires a burst of shots","large area explosion"],
+    cost: ["limited ammo","generates heat each use"],
+    failure: [
+      "reload locks weapon briefly",
+      "overheat disables weapon",
+      "misfire damages wielder"
+    ],
+    situational: ["extra damage to grouped enemies","strong at fight openings"]
+  },
 
-{
-  name: "Commitment → Reliability",
-  tag: "reliable",
-  advantage: ["guaranteed critical hit while aiming","cannot miss once locked"],
-  cost: ["must stand still to attack","cannot retarget mid-attack"],
-  failure: [
-    "movement cancels shot",
-    "long cooldown after firing",
-    "leaves wielder exposed"
-  ],
-  situational: ["bonus damage at long range","strong against priority targets"]
-}
+  {
+    name: "Commitment → Reliability",
+    tag: "reliable",
+    advantage: ["guaranteed critical hit while aiming","cannot miss once locked"],
+    cost: ["must stand still to attack","cannot retarget mid-attack"],
+    failure: [
+      "movement cancels shot",
+      "long cooldown after firing",
+      "leaves wielder exposed"
+    ],
+    situational: ["bonus damage at long range","strong against priority targets"]
+  },
+
+  {
+    name: "Precision → Punish",
+    tag: "reliable",
+    advantage: ["high single-target damage","guaranteed critical if aimed carefully"],
+    cost: ["slow attack speed","must stand still while attacking"],
+    failure: ["attack slightly delayed on miss","target can evade if moved","long cooldown leaves wielder exposed"],
+    situational: ["excellent against priority targets","bonus damage when aiming at weak points"]
+  },
+
+  {
+    name: "Charge → Impact",
+    tag: "heavy",
+    advantage: ["build momentum for massive swings","knocks back multiple enemies"],
+    cost: ["requires charging time before attack","movement speed reduced while charging"],
+    failure: ["missed swing leaves exposed","recoil may stagger user","long recovery before next attack"],
+    situational: ["strong in chokepoints","effective vs groups of enemies"]
+  },
+
+  {
+    name: "Elemental → Chaos",
+    tag: "reckless",
+    advantage: ["fire, ice, or electric effects","chance to affect multiple targets"],
+    cost: ["limited elemental ammo","generates heat or mana each use"],
+    failure: ["overload may backfire","misfire damages user","random effect may fail"],
+    situational: ["strong against clusters of enemies","extra damage in hazardous terrain"]
+  },
+
+  {
+    name: "Stealth → Strike",
+    tag: "reckless",
+    advantage: ["high damage from stealth","bonus damage from behind"],
+    cost: ["low defense while equipped","cannot block or parry"],
+    failure: ["attack misses if detected","recoil pushes user off position","exposed after failed strike"],
+    situational: ["ideal for hit-and-run tactics","effective in dark or confined spaces"]
+  }
 
 ];
+
 
 function choice(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
